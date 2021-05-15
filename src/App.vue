@@ -11,4 +11,9 @@ export default defineComponent({
 </script>
 
 <style>
+body,
+html,
+#app {
+  height: 100%;
+}
 </style>

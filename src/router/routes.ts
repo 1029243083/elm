@@ -1,22 +1,16 @@
 import { RouteRecordRaw } from "vue-router";
 
+import Index from '../view/index/index.vue'
 import Home from '../view/home.vue'
-import Index from '../view/index.vue'
-import Test from '../view/test.vue'
-
 export const routes: RouteRecordRaw[] = [
     {
         path: '/',
-        component: Home,
+        component: Index,
         children: [
             {
-                path: '/index',
-                component: Index
+                path: '/home',
+                component: Home
             }
         ]
-    },
-    {
-        path: '/test',
-        component: Test
     }
 ]

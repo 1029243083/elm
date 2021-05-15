@@ -1,19 +1,8 @@
-<template>
-  <div>
-      <div>头部</div>
-      <div>
-          <router-view></router-view>
-      </div>
-      <div>尾部</div>
-  </div>
-</template>
+<template>home/index</template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-
 </style>
