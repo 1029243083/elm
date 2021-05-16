@@ -1,10 +1,20 @@
 import { createStore } from 'vuex'
 
-const store = createStore({
-    state() {
+export interface stateType {
+    title: string
+}
 
+const store = createStore({
+    state(): stateType {
+        return {
+            title: '地址'
+        }
     },
-    mutations: {}
+    mutations: {
+        setTitle(state: stateType, payload: string) {
+            state.title = payload
+        }
+    }
 })
 
 export default store

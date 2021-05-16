@@ -7,6 +7,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@types/mockjs": "^1.0.3",
+    "axios": "^0.21.1",
+    "mockjs": "^1.1.0",
     "vant": "^3.0.16",
     "vue": "^3.0.5",
     "vue-router": "^4.0.8",
@@ -15,6 +18,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "less": "^4.1.1",
+    "less-loader": "^9.0.0",
     "typescript": "^4.1.3",
     "vite": "^2.3.0",
     "vite-plugin-style-import": "^0.10.0",
