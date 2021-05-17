@@ -94,3 +94,23 @@ Mock.mock(apis.banner, () => {
     })
     return data
 })
+
+Mock.mock(apis.shopList, () => {
+    const data = Mock.mock({
+        'shopList|10': [
+            {
+                title: '@ctitle(3, 5)',
+                img: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),
+                pinpai: '品牌',
+                'star|1-10': 1,
+                'salesVolume|100-1999': 100,
+                'riseGiveMoney|10-15': 10,
+                'DistributionFee|3-5': 3,
+                'distance|20-100': 20,
+                "time|1800000-3600000": 1800000,
+                id: '@guid'
+            }
+        ]
+    })
+    return data
+})

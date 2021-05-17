@@ -7,11 +7,16 @@
       </div>
     </van-swipe-item>
   </van-swipe>
+  <ShopList />
 </template>
 
 <script lang='ts'>
 import { getData } from "./index";
+import ShopList from "../../components/shopList/shopList.vue";
 export default {
+  components: {
+    ShopList,
+  },
   setup() {
     return {
       ...getData(),

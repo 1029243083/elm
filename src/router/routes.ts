@@ -6,6 +6,7 @@ export const routes: RouteRecordRaw[] = [
     {
         path: '/',
         component: Index,
+        redirect: '/home',
         children: [
             {
                 path: '/home',
