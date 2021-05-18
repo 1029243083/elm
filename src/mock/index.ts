@@ -97,7 +97,7 @@ Mock.mock(apis.banner, () => {
 
 Mock.mock(apis.shopList, () => {
     const data = Mock.mock({
-        'shopList|10': [
+        'shopList|5-10': [
             {
                 title: '@ctitle(3, 5)',
                 img: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),

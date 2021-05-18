@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="shop-wrapper">
     <van-list
       v-model:loading="loading"
       :finished="finished"
@@ -72,7 +72,8 @@ export default defineComponent({
 </script>
 
 <style scoped lang='less'>
-.wrapper {
+.shop-wrapper {
+  height: 80%;
   margin-top: 1rem;
   .item-wrapper {
     display: flex;

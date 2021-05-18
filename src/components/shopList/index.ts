@@ -3,7 +3,7 @@ import { AxiosResponse } from "axios"
 import { apis } from "../../axios/api"
 import axios from '../../axios/index'
 
-interface shopListType {
+export interface shopListType {
     title: string,
     img: string,
     pinpai: string,

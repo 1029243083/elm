@@ -13,11 +13,11 @@
       <router-view></router-view>
     </div>
     <div class="tabbar-box">
-      <van-tabbar v-model="active" @change="handleChange">
-        <van-tabbar-item icon="cart-circle-o">外卖</van-tabbar-item>
-        <van-tabbar-item icon="search">标签</van-tabbar-item>
-        <van-tabbar-item icon="records">订单</van-tabbar-item>
-        <van-tabbar-item icon="contact">我的</van-tabbar-item>
+      <van-tabbar v-model="active" @change="handleChange" route>
+        <van-tabbar-item to="/home" icon="cart-circle-o">外卖</van-tabbar-item>
+        <van-tabbar-item to="/search" icon="search">标签</van-tabbar-item>
+        <van-tabbar-item to="/order" icon="records">订单</van-tabbar-item>
+        <van-tabbar-item to="/my" icon="contact">我的</van-tabbar-item>
       </van-tabbar>
     </div>
   </div>
@@ -71,6 +71,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang='less'>
+<style lang='less' scoped>
 @import url("./index.less");
 </style>

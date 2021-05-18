@@ -18,7 +18,6 @@ interface bannerData {
 // 获取轮播数据
 async function getBannerData() {
     const res: AxiosResponse<bannerData> = await axios.get(apis.banner);
-    console.log(res.data)
     if (res.data.banner1 && res.data.banner2) {
         bannerDataRef.value = res.data
     }
