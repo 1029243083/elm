@@ -9,7 +9,12 @@
     >
       <!-- <van-cell v-for="item in state.list" :key="item" :title="item" /> -->
       <template #default>
-        <div class="item-wrapper" v-for="item in shopListRef" :key="item.id">
+        <div
+          class="item-wrapper"
+          v-for="item in shopListRef"
+          :key="item.id"
+          @click="handleClick(item.id)"
+        >
           <div class="image-box">
             <img :src="item.img" alt="" />
           </div>

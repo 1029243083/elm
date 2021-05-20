@@ -114,3 +114,24 @@ Mock.mock(apis.shopList, () => {
     })
     return data
 })
+
+Mock.mock(apis.orderList, () => {
+    const data = Mock.mock({
+        'orderList|10': [
+            {
+                title: '@ctitle(3, 5)' + '店',
+                img: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),
+                service: '已送达',
+                'itemImg|1-4': [
+                    {
+                        url: Mock.Random.image('200x100', '#50B347', '#FFF', '食品图片'),
+                        id: '@guid'
+                    }
+                ],
+                'price|10-30': 10,
+                id: '@guid'
+            }
+        ]
+    })
+    return data
+})

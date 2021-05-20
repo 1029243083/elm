@@ -5,6 +5,7 @@ import Home from '../view/home/home.vue'
 import Search from '../view/search/search.vue'
 import Order from '../view/order/order.vue'
 import My from '../view/My/my.vue'
+import ShopInfo from '../view/shopInfo/shopInfo.vue'
 export const routes: RouteRecordRaw[] = [
     {
         path: '/',
@@ -28,5 +29,10 @@ export const routes: RouteRecordRaw[] = [
                 component: My
             }
         ]
+    },
+    {
+        path: '/shopinfo',
+        name: 'shopInfo',
+        component: ShopInfo
     }
 ]
