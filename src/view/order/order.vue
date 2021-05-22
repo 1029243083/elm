@@ -7,7 +7,7 @@
       @load="onLoad"
     >
       <div class="item-wrapper" v-for="item in orderListRef" :key="item.id">
-        <div class="title">
+        <div class="title" @click="handleClick(item.id)">
           <div class="img-box">
             <img :src="item.img" alt="" />
           </div>

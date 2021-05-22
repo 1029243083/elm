@@ -4,6 +4,7 @@ import axios from '../../axios/index'
 import { apis } from "../../axios/api"
 import { AxiosResponse } from "axios"
 import { shopListType } from "../../components/shopList"
+import router from "../../router"
 
 interface recordsListType {
     value: string
@@ -60,6 +61,23 @@ const clear = () => {
     value.value = ''
 }
 
+// 跳转到店铺
+const handleClick = (id: string) => {
+    console.log('asdf')
+    router.push({
+        name: 'shopInfo',
+        params: {
+            id
+        }
+    })
+}
+
+// 点击文字搜索
+const clickRecords = (inputValue: string) => {
+    value.value = inputValue
+    getSearchData()
+}
+
 export default function () {
     return {
         value,
@@ -68,6 +86,8 @@ export default function () {
         onSearch,
         deleteRecors,
         deleteAll,
-        clear
+        clear,
+        handleClick,
+        clickRecords
     }
 }

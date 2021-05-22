@@ -2,6 +2,7 @@ import { Ref, ref } from '@vue/reactivity';
 import { AxiosResponse } from 'axios';
 import { apis } from '../../axios/api'
 import axios from '../../axios/index'
+import router from '../../router';
 
 interface orderListType {
     title: string
@@ -34,9 +35,19 @@ const onLoad = () => {
     getData()
 }
 
+const handleClick = (id: string) => {
+    router.push({
+        name: 'shopInfo',
+        params: {
+            id
+        }
+    })
+}
+
 export default function () {
     return {
         onLoad,
+        handleClick,
         loading,
         finished,
         orderListRef

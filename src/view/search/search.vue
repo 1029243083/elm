@@ -20,7 +20,9 @@
         v-for="(item, index) in recordsListRef"
         :key="index"
       >
-        <div class="text">{{ item.value }}</div>
+        <div class="text" @click="clickRecords(item.value)">
+          {{ item.value }}
+        </div>
         <div class="icon">
           <van-icon
             name="cross"
@@ -52,6 +54,7 @@
         :riseGiveMoney="item.riseGiveMoney"
         :distance="item.distance"
         :img="item.img"
+        @click="handleClick(item.id)"
       />
     </template>
   </div>

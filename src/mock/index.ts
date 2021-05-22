@@ -135,3 +135,45 @@ Mock.mock(apis.orderList, () => {
     })
     return data
 })
+
+Mock.mock(apis.shopInfoLeft, () => {
+    const data = Mock.mock({
+        'shopInfoLeft|3-6': [
+            {
+                id: '@guid',
+                title: '@ctitle(2, 3)'
+            }
+        ]
+    })
+    return data
+})
+
+Mock.mock(apis.shopInfoRight, () => {
+    const data = Mock.mock({
+        'shopInfoRight|5-10': [
+            {
+                id: '@guid',
+                img: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),
+                title: '@ctitle(2, 3)',
+                desc: '@ctitle(5, 10)',
+                'salesVolume|100-200': 100,
+                'praise|0-100': 100,
+                redText: '@ctitle(2, 3)',
+                'price|10-100': 10
+            }
+        ]
+    })
+    return data
+})
+
+Mock.mock(apis.shopInfoHeader, () => {
+    const data = Mock.mock({
+        shopInfoHeader: {
+            img: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),
+            desc: '商家配送/分钟送达/配送费￥5',
+            notice: '@ctitle(8, 18)',
+            title: '@ctitle(3, 6)'
+        }
+    })
+    return data
+})

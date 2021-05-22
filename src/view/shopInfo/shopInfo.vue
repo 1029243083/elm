@@ -4,17 +4,14 @@
     <div class="header-wrapper">
       <div class="shopinfo-header">
         <div class="img-box">
-          <img
-            src="https://t7.baidu.com/it/u=4198287529,2774471735&fm=193&f=GIF"
-            alt=""
-          />
+          <img :src="headerRes.img" alt="" />
         </div>
       </div>
       <div class="info-box">
-        <div class="title">是的发送到</div>
-        <div class="peisong">三大法师的</div>
+        <div class="title">{{ headerRes.title }}</div>
+        <div class="peisong">{{ headerRes.desc }}</div>
         <div class="desc">
-          是的发送到发送到发送到发送到asdfasdfasdfasdfasd发送到发送到发送到
+          {{ headerRes.notice }}
         </div>
       </div>
       <div class="icon">
@@ -30,20 +27,27 @@
       </div>
     </div>
     <div class="content">
-      <div class="list-left"></div>
-      <div class="list-right"></div>
+      <div class="list-left">
+        <ShopInfoLeft :data="leftRes" @leftChange="leftChange" />
+      </div>
+      <div class="list-right">
+        <ShopInfoRIght :data="rightRes" />
+      </div>
     </div>
   </div>
 </template>
 
 <script lang='ts'>
 import { defineComponent } from "vue";
-import { useRoute } from "vue-router";
+import ShopInfoLeft from "../../components/shopInfoLeft/shopInfoLeft.vue";
+import ShopInfoRIght from "../../components/shopInfoRight/shopInfoRight.vue";
 import Data from "./index";
 export default defineComponent({
+  components: {
+    ShopInfoLeft,
+    ShopInfoRIght,
+  },
   setup() {
-    const route = useRoute();
-    console.log(route.params.id);
     return {
       ...Data(),
     };
@@ -121,12 +125,12 @@ export default defineComponent({
     .list-left {
       width: 25%;
       height: 100%;
-      background: red;
+      background: rgba(235, 235, 235, 0.418);
     }
     .list-right {
       height: 100%;
       width: 75%;
-      background-color: aqua;
+      overflow-y: auto;
     }
   }
 }
