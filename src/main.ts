@@ -18,7 +18,8 @@ import {
     Empty,
     DropdownMenu,
     DropdownItem,
-    TreeSelect
+    TreeSelect,
+    Cell
 } from 'vant';
 const vantCom = [Tabbar,
     TabbarItem,
@@ -33,7 +34,8 @@ const vantCom = [Tabbar,
     Empty,
     DropdownMenu,
     DropdownItem,
-    TreeSelect
+    TreeSelect,
+    Cell
 ];
 const app = createApp(App);
 for (let i = 0; i < vantCom.length; i++) {

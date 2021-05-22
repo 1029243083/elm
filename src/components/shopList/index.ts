@@ -17,7 +17,7 @@ export interface shopListType {
     id: string
 }
 
-interface resultType {
+export interface resultType {
     shopList: shopListType[]
 }
 

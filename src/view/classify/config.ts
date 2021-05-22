@@ -36,6 +36,12 @@ export interface childrenType {
     id: string
 }
 
+export interface shuxingItemType {
+    text: string,
+    isSelect: boolean,
+    id: number
+}
+
 
 function craeteData() {
     const arr: itemType[] = []
@@ -60,5 +66,54 @@ function getRamdom(max: number, min: number) {
     return Math.floor(Math.random() * (max - min) + min)
 }
 
+export const sortArr = [
+    {
+        text: '智能排序',
+        type: 0
+    }, {
+        text: '距离最近',
+        type: 1
+    }, {
+        text: '销量最高',
+        type: 2
+    }, {
+        text: '起送价最低',
+        type: 3
+    }, {
+        text: '配送速度最快',
+        type: 4
+    }, {
+        text: '评分最高',
+        type: 5
+    },
+]
+
+export const screenArr: shuxingItemType[] = [
+    {
+        text: '品牌商家',
+        isSelect: false,
+        id: 100
+    }, {
+        text: '外卖保',
+        isSelect: false,
+        id: 101
+    }, {
+        text: '准时达',
+        isSelect: false,
+        id: 102
+    }, {
+        text: '新店',
+        isSelect: false,
+        id: 103
+    }, {
+        text: '在线支付',
+        isSelect: false,
+        id: 104
+    }, {
+        text: '开发票',
+        isSelect: false,
+        id: 105
+    },
+]
 
 export const classifyItem = craeteData()
