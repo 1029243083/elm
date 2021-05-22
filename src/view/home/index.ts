@@ -2,6 +2,7 @@ import { Ref, ref } from "@vue/reactivity"
 import { AxiosResponse } from "axios";
 import { apis } from "../../axios/api"
 import axios from '../../axios/index'
+import router from "../../router";
 const bannerDataRef: Ref<bannerData> = ref({})
 
 interface banner_item {
@@ -25,8 +26,18 @@ async function getBannerData() {
 
 getBannerData()
 
+const handleClick = (id: string) => {
+    router.push({
+        name: 'classify',
+        params: {
+            id
+        }
+    })
+}
+
 export function getData() {
     return {
-        bannerDataRef
+        bannerDataRef,
+        handleClick
     }
 }

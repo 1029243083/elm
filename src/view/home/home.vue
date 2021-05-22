@@ -1,7 +1,12 @@
 <template>
   <van-swipe class="my-swipe" :autoplay="3000" indicator-color="rgb(0,122,255)">
     <van-swipe-item v-for="(item, index) in bannerDataRef" :key="index">
-      <div class="item-box" v-for="banner in item" :key="banner.id">
+      <div
+        class="item-box"
+        v-for="banner in item"
+        :key="banner.id"
+        @click="handleClick(banner.id)"
+      >
         <img :src="banner.src" alt="" />
         <div class="title">{{ banner.title }}</div>
       </div>

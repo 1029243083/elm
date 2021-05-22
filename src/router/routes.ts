@@ -34,5 +34,10 @@ export const routes: RouteRecordRaw[] = [
         path: '/shopinfo',
         name: 'shopInfo',
         component: ShopInfo
+    },
+    {
+        path: '/classify',
+        name: 'classify',
+        component: import('../view/classify/classify.vue')
     }
 ]

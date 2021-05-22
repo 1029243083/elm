@@ -15,79 +15,79 @@ Mock.mock(apis.banner, () => {
             {
                 title: '麻辣烫',
                 src: 'src/assets/banner_png/icon-test.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '包子店',
                 src: 'src/assets/banner_png/baozi.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '鲜花蛋糕',
                 src: 'src/assets/banner_png/dangao.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '日韩料理',
                 src: 'src/assets/banner_png/rihanliaoli.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '果蔬生鲜',
                 src: 'src/assets/banner_png/yumi.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '汉堡薯条',
                 src: 'src/assets/banner_png/hanbao.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '披萨意面',
                 src: 'src/assets/banner_png/pisa.png',
-                id: '@uid'
+                id: '@guid'
             }
         ],
         banner2: [
             {
                 title: '甜品饮品',
                 src: 'src/assets/banner_png/tianpin.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '商超便利',
                 src: 'src/assets/banner_png/shangchao.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '美食',
                 src: 'src/assets/banner_png/meishi.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '简餐',
                 src: 'src/assets/banner_png/jiancancai.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '新店特惠',
                 src: 'src/assets/banner_png/mianfeixindiantiyan.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '准时达',
                 src: 'src/assets/banner_png/jiaofuzhunshi.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '预定早餐',
                 src: 'src/assets/banner_png/zaocan.png',
-                id: '@uid'
+                id: '@guid'
             },
             {
                 title: '土豪推荐',
                 src: 'src/assets/banner_png/tuhaonan.png',
-                id: '@uid'
+                id: '@guid'
             }
         ]
 
