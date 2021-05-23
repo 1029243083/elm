@@ -13,9 +13,9 @@
       <div class="price">
         <div class="price-num">￥{{ carData.price }}</div>
         <div class="btn-box">
-          <div class="reduce">-</div>
-          <div class="num">1</div>
-          <div class="add">+</div>
+          <div class="reduce" @click="changeNum('reduce', carData)">-</div>
+          <div class="num">{{ carData.num }}</div>
+          <div class="add" @click="changeNum('add', carData)">+</div>
         </div>
       </div>
     </div>
@@ -24,8 +24,33 @@
 
 <script lang='ts'>
 import { defineComponent } from "vue";
+import store from "../../store";
+import { shopInfoRightType } from "../../view/shopInfo";
 export default defineComponent({
   props: ["carData"],
+  setup() {
+    const changeNum = (type: string, carData: shopInfoRightType) => {
+      if (type === "reduce") {
+        if (carData.num <= 0) {
+          return;
+        }
+        carData.num--;
+        store.commit("setPurchasedItem", {
+          type: "reduce",
+          data: carData,
+        });
+      } else {
+        carData.num++;
+        store.commit("setPurchasedItem", {
+          type: "add",
+          data: carData,
+        });
+      }
+    };
+    return {
+      changeNum,
+    };
+  },
 });
 </script>
 

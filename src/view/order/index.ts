@@ -6,10 +6,17 @@ import router from '../../router';
 
 interface orderListType {
     title: string
-    itemImg: string[]
+    itemImg: itemType[]
     price: string
     service: string
     img: string
+    id: string
+}
+
+interface itemType {
+    id: string
+    url: string
+
 }
 
 interface resultType {

@@ -26,13 +26,23 @@
         评价
       </div>
     </div>
-    <div class="content">
-      <div class="list-left">
-        <ShopInfoLeft :data="leftRes" @leftChange="leftChange" />
+    <div v-if="changeIndex === 0">
+      <div class="content">
+        <div class="list-left">
+          <ShopInfoLeft :data="leftRes" @leftChange="leftChange" />
+        </div>
+        <div class="list-right">
+          <ShopInfoRIght :data="rightRes" />
+        </div>
       </div>
-      <div class="list-right">
-        <ShopInfoRIght :data="rightRes" />
-      </div>
+      <Ctrl />
+    </div>
+    <div v-else>
+      <Comment
+        :header="commentRes.header"
+        :center="commentRes.center"
+        :bottomData="commentRes.bottomData"
+      />
     </div>
   </div>
 </template>
@@ -41,11 +51,15 @@
 import { defineComponent } from "vue";
 import ShopInfoLeft from "../../components/shopInfoLeft/shopInfoLeft.vue";
 import ShopInfoRIght from "../../components/shopInfoRight/shopInfoRight.vue";
+import Ctrl from "../../components/ctrl/ctrl.vue";
 import Data from "./index";
+import Comment from "../../components/comment/comment.vue";
 export default defineComponent({
   components: {
     ShopInfoLeft,
     ShopInfoRIght,
+    Ctrl,
+    Comment,
   },
   setup() {
     return {

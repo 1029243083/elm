@@ -4,5 +4,6 @@ export const apis = {
     orderList: '/api/home/orderlist',
     shopInfoLeft: '/api/shopinfo/left',
     shopInfoRight: '/api/shopinfo/right',
-    shopInfoHeader: '/api/shopinfo/header'
+    shopInfoHeader: '/api/shopinfo/header',
+    shopInfoComment: '/api/shopino/comment'
 }

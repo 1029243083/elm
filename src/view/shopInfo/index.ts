@@ -22,7 +22,7 @@ interface resultLeft {
     shopInfoLeft: shopInfoLeftType[]
 }
 
-interface shopInfoRightType {
+export interface shopInfoRightType {
     id: string
     title: string
     desc: string
@@ -30,7 +30,8 @@ interface shopInfoRightType {
     praise: number
     redText: string
     price: number
-    img: string
+    img: string,
+    num: number
 }
 
 interface resultRight {
@@ -78,6 +79,43 @@ const getHeader = async () => {
 
 getHeader()
 
+interface commentType {
+    header?: {
+        num: number,
+        score: number,
+        time: number
+    },
+    center?: {
+        text: string,
+        num: number
+    }[],
+    bottomData?: {
+        av: string,
+        info: {
+            imgList: {
+                url: string
+            }[],
+            phone: number
+            score: number
+            tag: {
+                text: string
+            }[]
+        }
+        time: string
+    }
+}
+
+interface commentResType {
+    shopInfoComment: commentType
+}
+
+const commentRes: Ref<commentType> = ref({})
+
+const getComment = async () => {
+    const res: AxiosResponse<commentResType> = await axios.get(apis.shopInfoComment);
+    commentRes.value = res.data.shopInfoComment
+}
+getComment()
 export default function () {
     return {
         handleChangeIndex,
@@ -86,6 +124,7 @@ export default function () {
         leftChange,
         leftRes,
         rightRes,
-        headerRes
+        headerRes,
+        commentRes
     }
 }

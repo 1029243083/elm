@@ -159,7 +159,8 @@ Mock.mock(apis.shopInfoRight, () => {
                 'salesVolume|100-200': 100,
                 'praise|0-100': 100,
                 redText: '@ctitle(2, 3)',
-                'price|10-100': 10
+                'price|10-100': 10,
+                num: 0
             }
         ]
     })
@@ -173,6 +174,45 @@ Mock.mock(apis.shopInfoHeader, () => {
             desc: '商家配送/分钟送达/配送费￥5',
             notice: '@ctitle(8, 18)',
             title: '@ctitle(3, 6)'
+        }
+    })
+    return data
+})
+
+Mock.mock(apis.shopInfoComment, () => {
+    const data = Mock.mock({
+        shopInfoComment: {
+            header: {
+                'score|1-5.1': 1,
+                'time|20-40': 20,
+                'num|1-100': 1
+            },
+            'center|1-8': [
+                {
+                    text: '@ctitle(2, 3)',
+                    'num|100-200': 100
+                }
+            ],
+            'bottomData|10-15': [
+                {
+                    av: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像'),
+                    info: {
+                        phone: Mock.mock('@integer(10000)'),
+                        'score|1-5.1-9': 1,
+                        'imgList|1-3': [
+                            {
+                                url: Mock.Random.image('200x100', '#50B347', '#FFF', '商家头像')
+                            }
+                        ],
+                        'tag|1-4': [
+                            {
+                                text: '@ctitle(2, 3)'
+                            }
+                        ]
+                    },
+                    time: Mock.mock('@date')
+                }
+            ]
         }
     })
     return data
