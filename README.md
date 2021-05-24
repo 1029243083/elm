@@ -1,27 +1,12 @@
-# Vue 3 + Typescript + Vite
+# Vue 3 + Typescript + Vite + Vant
 
-This template should help get you started developing with Vue 3 and Typescript in Vite.
+- 项目用的是mockjs生成的数据
+- 还有一个后台项目[地址](https://github.com/1029243083/elm-admin)
+- 后台页面地址[地址](https://1029243083.github.io/elm-admin/dist/index.html#/c_home)
+    - 账号:admin
+    - 密码:123123
+- 此项目页面[地址](https://1029243083.github.io/elm/dist/index.html#/home)
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur). Make sure to enable `vetur.experimental.templateInterpolationService` in settings!
-
-### If Using `<script setup>`
-
-[`<script setup>`](https://github.com/vuejs/rfcs/pull/227) is a feature that is currently in RFC stage. To get proper IDE support for the syntax, use [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) instead of Vetur (and disable Vetur).
-
-## Type Support For `.vue` Imports in TS
-
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can use the following:
-
-### If Using Volar
-
-Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
-
-### If Using Vetur
-
-1. Install and add `@vuedx/typescript-plugin-vue` to the [plugins section](https://www.typescriptlang.org/tsconfig#plugins) in `tsconfig.json`
-2. Delete `src/shims-vue.d.ts` as it is no longer needed to provide module info to Typescript
-3. Open `src/main.ts` in VSCode
-4. Open the VSCode command palette
-5. Search and run "Select TypeScript version" -> "Use workspace version"
+# 部分截图
+![](https://i.loli.net/2021/05/24/hZ8OikQKouTrVAa.png)![](https://i.loli.net/2021/05/24/CsTOrMYgSutvaoj.png)![](https://i.loli.net/2021/05/24/ouyb4sWnGacXxpd.png)![](https://i.loli.net/2021/05/24/B1ftm3aP4FcHlA7.png)
+![](https://i.loli.net/2021/05/24/oUbhVkeauclvwPK.png)
