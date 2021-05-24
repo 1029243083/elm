@@ -6,6 +6,10 @@ import Search from '../view/search/search.vue'
 import Order from '../view/order/order.vue'
 import My from '../view/My/my.vue'
 import ShopInfo from '../view/shopInfo/shopInfo.vue'
+import Classify from '../view/classify/classify.vue'
+import OrderInfo from '../view/orderInfo/orderInfo.vue'
+import Address from '../view/address/address.vue'
+
 export const routes: RouteRecordRaw[] = [
     {
         path: '/',
@@ -38,6 +42,16 @@ export const routes: RouteRecordRaw[] = [
     {
         path: '/classify',
         name: 'classify',
-        component: import('../view/classify/classify.vue')
+        component: Classify
+    },
+    {
+        path: '/orderinfo',
+        name: 'orderinfo',
+        component: OrderInfo
+    },
+    {
+        path: '/address',
+        name: 'address',
+        component: Address
     }
 ]

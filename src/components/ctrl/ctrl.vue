@@ -8,13 +8,14 @@
       <div class="num">￥{{ price }}</div>
       <div>配送费￥5</div>
     </div>
-    <div class="btn">结算</div>
+    <div class="btn" @click="handlClick">结算</div>
   </div>
 </template>
 
 <script lang='ts'>
 import { defineComponent } from "vue";
 import { mapState } from "vuex";
+import router from "../../router";
 import { stateType } from "../../store";
 export default defineComponent({
   computed: mapState({
@@ -31,6 +32,17 @@ export default defineComponent({
       return res;
     },
   }),
+
+  setup() {
+    const handlClick = () => {
+      router.push({
+        name: "orderinfo",
+      });
+    };
+    return {
+      handlClick,
+    };
+  },
 });
 </script>
 

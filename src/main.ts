@@ -19,7 +19,12 @@ import {
     DropdownMenu,
     DropdownItem,
     TreeSelect,
-    Cell
+    Cell,
+    ContactCard,
+    ActionSheet,
+    Popup,
+    AddressEdit,
+    Toast
 } from 'vant';
 const vantCom = [Tabbar,
     TabbarItem,
@@ -35,7 +40,12 @@ const vantCom = [Tabbar,
     DropdownMenu,
     DropdownItem,
     TreeSelect,
-    Cell
+    Cell,
+    ContactCard,
+    ActionSheet,
+    Popup,
+    AddressEdit,
+    Toast
 ];
 const app = createApp(App);
 for (let i = 0; i < vantCom.length; i++) {

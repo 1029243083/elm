@@ -1,16 +1,24 @@
 import { createStore } from 'vuex'
+import { setStorage } from '../util'
 import { shopInfoRightType } from '../view/shopInfo'
 
 export interface stateType {
     title: string,
-    purchasedItem: shopInfoRightType[]
+    purchasedItem: shopInfoRightType[],
+    totalPrice: number,
+    address: {
+        name?: string,
+        tel?: number
+    }
 }
 
 const store = createStore({
     state(): stateType {
         return {
             title: '地址',
-            purchasedItem: []
+            purchasedItem: [],
+            totalPrice: 0,
+            address: {}
         }
     },
     mutations: {
@@ -41,6 +49,15 @@ const store = createStore({
                     state.purchasedItem.splice(index, 1, payload.data)
                 }
             }
+            let price = 0
+            state.purchasedItem.forEach(item => {
+                price += item.num * item.price
+            })
+            state.totalPrice = price
+        },
+        setAddress(state: stateType, payload: string) {
+            state.address = JSON.parse(payload)
+            setStorage('address', payload)
         }
     }
 })
