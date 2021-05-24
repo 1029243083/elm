@@ -9,17 +9,17 @@ Mock.mock(apis.banner, () => {
         banner1: [
             {
                 title: '湘川菜',
-                src: '/src/assets/banner_png/chuanxiangcai.png',
+                src: 'assets/banner_png/chuanxiangcai.png',
                 id: '@guid'
             },
             {
                 title: '麻辣烫',
-                src: '/src/assets/banner_png/icon-test.png',
+                src: 'assets/banner_png/icon-test.png',
                 id: '@guid'
             },
             {
                 title: '包子店',
-                src: '/src/assets/banner_png/baozi.png',
+                src: 'assets/banner_png/baozi.png',
                 id: '@guid'
             },
             {
