@@ -9,22 +9,22 @@ Mock.mock(apis.banner, () => {
         banner1: [
             {
                 title: '湘川菜',
-                src: './assets/banner_png/chuanxiangcai.png',
+                src: 'https://imgtu.com/i/gxCKpV',
                 id: '@guid'
             },
             {
                 title: '麻辣烫',
-                src: '/assets/banner_png/icon-test.png',
+                src: 'https://imgtu.com/i/gxC0XD',
                 id: '@guid'
             },
             {
                 title: '包子店',
-                src: '/assets/banner_png/baozi.png',
+                src: 'https://imgtu.com/i/gxCght',
                 id: '@guid'
             },
             {
                 title: '鲜花蛋糕',
-                src: '/src/assets/banner_png/dangao.png',
+                src: 'https://imgtu.com/i/gxC7As',
                 id: '@guid'
             },
             {
