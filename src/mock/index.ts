@@ -24,7 +24,7 @@ Mock.mock(apis.banner, () => {
             },
             {
                 title: '鲜花蛋糕',
-                src: 'https://imgtu.com/i/gxC7As',
+                src: 'https://z3.ax1x.com/2021/05/24/gxC7As.png',
                 id: '@guid'
             },
             {
