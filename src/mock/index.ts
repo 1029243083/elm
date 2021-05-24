@@ -9,7 +9,7 @@ Mock.mock(apis.banner, () => {
         banner1: [
             {
                 title: '湘川菜',
-                src: '/assets/banner_png/chuanxiangcai.png',
+                src: './assets/banner_png/chuanxiangcai.png',
                 id: '@guid'
             },
             {
