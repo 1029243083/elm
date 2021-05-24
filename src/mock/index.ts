@@ -9,84 +9,84 @@ Mock.mock(apis.banner, () => {
         banner1: [
             {
                 title: '湘川菜',
-                src: 'https://imgtu.com/i/gxCKpV',
+                src: 'https://i.loli.net/2021/05/24/9nRzLFx2ZjyI7W5.png',
                 id: '@guid'
             },
             {
                 title: '麻辣烫',
-                src: 'https://imgtu.com/i/gxC0XD',
+                src: 'https://i.loli.net/2021/05/24/kaZAM5iWtHxuSsT.png',
                 id: '@guid'
             },
             {
                 title: '包子店',
-                src: 'https://imgtu.com/i/gxCght',
+                src: 'https://i.loli.net/2021/05/24/InBmdtWrl9sF86L.png',
                 id: '@guid'
             },
             {
                 title: '鲜花蛋糕',
-                src: 'https://z3.ax1x.com/2021/05/24/gxC7As.png',
+                src: 'https://i.loli.net/2021/05/24/G4XIJOA5NQxmCRK.png',
                 id: '@guid'
             },
             {
                 title: '日韩料理',
-                src: '/src/assets/banner_png/rihanliaoli.png',
+                src: 'https://i.loli.net/2021/05/24/q2Un1Z6AfxvJ8jP.png',
                 id: '@guid'
             },
             {
                 title: '果蔬生鲜',
-                src: '/src/assets/banner_png/yumi.png',
+                src: 'https://i.loli.net/2021/05/24/2SdLm4iPjXHgAhf.png',
                 id: '@guid'
             },
             {
                 title: '汉堡薯条',
-                src: '/src/assets/banner_png/hanbao.png',
+                src: 'https://i.loli.net/2021/05/24/yDYt7aHETkzKCgd.png',
                 id: '@guid'
             },
             {
                 title: '披萨意面',
-                src: '/src/assets/banner_png/pisa.png',
+                src: 'https://i.loli.net/2021/05/24/KyQYpa5FVo9Suje.png',
                 id: '@guid'
             }
         ],
         banner2: [
             {
                 title: '甜品饮品',
-                src: '/src/assets/banner_png/tianpin.png',
+                src: 'https://i.loli.net/2021/05/24/NMPlJ8WsQc2IHdn.png',
                 id: '@guid'
             },
             {
                 title: '商超便利',
-                src: '/src/assets/banner_png/shangchao.png',
+                src: 'https://i.loli.net/2021/05/24/1jo6WVFNCq5ugyc.png',
                 id: '@guid'
             },
             {
                 title: '美食',
-                src: '/src/assets/banner_png/meishi.png',
+                src: 'https://i.loli.net/2021/05/24/4JkljeCmKvBLczD.png',
                 id: '@guid'
             },
             {
                 title: '简餐',
-                src: '/src/assets/banner_png/jiancancai.png',
+                src: 'https://i.loli.net/2021/05/24/1EuIW637N8QJGZ4.png',
                 id: '@guid'
             },
             {
                 title: '新店特惠',
-                src: '/src/assets/banner_png/mianfeixindiantiyan.png',
+                src: 'https://i.loli.net/2021/05/24/PejU4MisDdhX6G8.png',
                 id: '@guid'
             },
             {
                 title: '准时达',
-                src: '/src/assets/banner_png/jiaofuzhunshi.png',
+                src: 'https://i.loli.net/2021/05/24/ZscjqC9Kuvfw1PF.png',
                 id: '@guid'
             },
             {
                 title: '预定早餐',
-                src: '/src/assets/banner_png/zaocan.png',
+                src: 'https://i.loli.net/2021/05/24/kjN4XHxJ65GiF3I.png',
                 id: '@guid'
             },
             {
                 title: '土豪推荐',
-                src: '/src/assets/banner_png/tuhaonan.png',
+                src: 'https://i.loli.net/2021/05/24/UewnLyrCYjizEfW.png',
                 id: '@guid'
             }
         ]
